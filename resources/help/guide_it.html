@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; margin: 16px; color: #2d3748; }
+  h1 { color: #1a365d; border-bottom: 2px solid #3182ce; padding-bottom: 8px; font-size: 22px; }
+  h2 { color: #2b6cb0; margin-top: 20px; font-size: 17px; }
+  p, li { font-size: 14px; }
+  ul { padding-left: 20px; }
+  .badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 12px; font-weight: bold; }
+  .badge-primary { background: #ebf8ff; color: #2b6cb0; border: 1px solid #bee3f8; }
+  .badge-warn { background: #fffaf0; color: #c05621; border: 1px solid #feebc8; }
+  .tip-box { background-color: #f0fff4; border-left: 4px solid #38a169; padding: 10px 14px; margin: 14px 0; border-radius: 0 4px 4px 0; }
+  .warn-box { background-color: #fff5f5; border-left: 4px solid #e53e3e; padding: 10px 14px; margin: 14px 0; border-radius: 0 4px 4px 0; }
+  code { background-color: #edf2f7; padding: 2px 5px; border-radius: 3px; font-family: monospace; font-size: 13px; }
+</style>
+</head>
+<body>
+
+<h1>Guida Utente - QShut</h1>
+<p><strong>QShut</strong> è un'applicazione grafica per Linux progettata per pianificare lo spegnimento, il riavvio o la sospensione del computer con facilità e sicurezza, senza richiedere privilegi di amministratore (root/sudo).</p>
+
+<h2>1. Modalità di Pianificazione</h2>
+<ul>
+  <li><span class="badge badge-primary">Conto alla Rovescia</span>: Imposta il tempo residuo in minuti (da 1 a 10080 minuti). Puoi usare i pulsanti veloci <code>+15m</code>, <code>+30m</code>, <code>+1h</code> e <code>+2h</code> per incrementare rapidamente il tempo desiderato.</li>
+  <li><span class="badge badge-primary">Orario Specifico</span>: Seleziona l'ora e i minuti esatti (formato <code>HH:mm</code>). Se l'orario impostato è già trascorso per oggi, il programma pianificherà automaticamente l'operazione per domani.</li>
+</ul>
+
+<h2>2. Azioni di Sistema</h2>
+<p>Tramite il selettore "Azione" puoi scegliere:</p>
+<ul>
+  <li><strong>Spegni il computer</strong>: Arresto completo sicuro del sistema (default).</li>
+  <li><strong>Riavvia il computer</strong>: Riavvio della macchina.</li>
+  <li><strong>Sospendi (Sleep)</strong>: Mette il computer in stato di risparmio energetico / standby.</li>
+</ul>
+
+<h2>3. Barra di Sistema e Notifiche (System Tray)</h2>
+<ul>
+  <li>Selezionando <em>"Riduci a icona nella barra di sistema"</em>, la finestra principale si nasconderà all'avvio del timer.</li>
+  <li>Passando il mouse sull'icona nella barra di sistema potrai leggere il tempo rimanente aggiornato.</li>
+  <li>Cliccando sull'icona della barra o selezionando <em>"Mostra Finestra"</em> dal menu contestuale puoi riaprire la finestra in ogni istante.</li>
+</ul>
+
+<div class="warn-box">
+  <strong>Avviso di Sicurezza a 60 Secondi:</strong><br>
+  Quando mancano esattamente 60 secondi all'esecuzione dell'azione, QShut invia una notifica desktop di sistema e riporta la finestra in primo piano, dandoti la possibilità di cliccare su <strong>"Annulla"</strong> in caso di ripensamento.
+</div>
+
+<h2>4. Modalità Simulazione (Test)</h2>
+<div class="tip-box">
+  Attivando la casella <em>"Modalità simulazione (Test)"</em> puoi provare il conto alla rovescia, l'avviso e la barra di avanzamento senza alcun rischio di spegnere realmente il computer.
+</div>
+
+<h2>5. Opzioni da Riga di Comando</h2>
+<ul>
+  <li><code>./QShut-x86_64.AppImage --test</code> : Avvia l'app con la modalità simulazione già attiva.</li>
+  <li><code>./QShut-x86_64.AppImage --help</code> : Mostra i parametri disponibili.</li>
+  <li><code>./QShut-x86_64.AppImage --version</code> : Mostra la versione corrente.</li>
+</ul>
+
+</body>
+</html>

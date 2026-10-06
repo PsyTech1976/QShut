@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; margin: 16px; color: #2d3748; }
+  h1 { color: #1a365d; border-bottom: 2px solid #3182ce; padding-bottom: 8px; font-size: 22px; }
+  h2 { color: #2b6cb0; margin-top: 20px; font-size: 17px; }
+  p, li { font-size: 14px; }
+  ul { padding-left: 20px; }
+  .badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 12px; font-weight: bold; }
+  .badge-primary { background: #ebf8ff; color: #2b6cb0; border: 1px solid #bee3f8; }
+  .badge-warn { background: #fffaf0; color: #c05621; border: 1px solid #feebc8; }
+  .tip-box { background-color: #f0fff4; border-left: 4px solid #38a169; padding: 10px 14px; margin: 14px 0; border-radius: 0 4px 4px 0; }
+  .warn-box { background-color: #fff5f5; border-left: 4px solid #e53e3e; padding: 10px 14px; margin: 14px 0; border-radius: 0 4px 4px 0; }
+  code { background-color: #edf2f7; padding: 2px 5px; border-radius: 3px; font-family: monospace; font-size: 13px; }
+</style>
+</head>
+<body>
+
+<h1>Benutzerhandbuch - QShut</h1>
+<p><strong>QShut</strong> ist eine grafische Linux-Anwendung zum komfortablen und sicheren Planen des Herunterfahrens, Neustartens oder Ruhezustands Ihres Systems ohne Administratorrechte (root/sudo).</p>
+
+<h2>1. Planungsmodi</h2>
+<ul>
+  <li><span class="badge badge-primary">Countdown</span>: Stellen Sie die gewünschte Zeit in Minuten ein (1 bis 10080 Minuten). Mit den Schnelltasten <code>+15m</code>, <code>+30m</code>, <code>+1h</code> und <code>+2h</code> können Sie die Dauer schnell anpassen.</li>
+  <li><span class="badge badge-primary">Bestimmte Uhrzeit</span>: Wählen Sie die genaue Uhrzeit (Format <code>HH:mm</code>). Falls die Zeit heute bereits vergangen ist, wird der Vorgang automatisch für morgen geplant.</li>
+</ul>
+
+<h2>2. Systemaktionen</h2>
+<p>Über das Aktionsmenü können Sie wählen:</p>
+<ul>
+  <li><strong>Computer herunterfahren</strong>: Sicheres Ausschalten des Computers (Standard).</li>
+  <li><strong>Computer neu starten</strong>: Sauberer Neustart des Rechners.</li>
+  <li><strong>Energie sparen (Standby)</strong>: Versetzt das System in den Ruhezustand.</li>
+</ul>
+
+<h2>3. Infobereich (System Tray) & Benachrichtigungen</h2>
+<ul>
+  <li>Mit <em>„In den Infobereich minimieren“</em> wird das Hauptfenster nach dem Start des Timers ausgeblendet.</li>
+  <li>Fahren Sie mit der Maus über das Symbol, um die verbleibende Restzeit zu sehen.</li>
+  <li>Klicken Sie auf das Symbol oder wählen Sie <em>„Fenster anzeigen“</em>, um das Hauptfenster wiederherzustellen.</li>
+</ul>
+
+<div class="warn-box">
+  <strong>60-Sekunden-Sicherheitswarnung:</strong><br>
+  Genau 60 Sekunden vor der Ausführung sendet QShut eine Desktop-Benachrichtigung und bringt das Fenster in den Vordergrund, damit Sie bei Bedarf auf <strong>„Abbrechen“</strong> klicken können.
+</div>
+
+<h2>4. Simulationsmodus (Test)</h2>
+<div class="tip-box">
+  Mit der Option <em>„Simulationsmodus (Test)“</em> können Sie den Timer und die Abläufe risikofrei testen, ohne dass Ihr Computer ausgeschaltet wird.
+</div>
+
+<h2>5. Befehlszeilenoptionen</h2>
+<ul>
+  <li><code>./QShut-x86_64.AppImage --test</code> : Startet mit voraktiviertem Simulationsmodus.</li>
+  <li><code>./QShut-x86_64.AppImage --help</code> : Zeigt verfügbare Optionen an.</li>
+  <li><code>./QShut-x86_64.AppImage --version</code> : Gibt die Versionsnummer aus.</li>
+</ul>
+
+</body>
+</html>

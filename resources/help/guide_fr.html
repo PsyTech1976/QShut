@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; margin: 16px; color: #2d3748; }
+  h1 { color: #1a365d; border-bottom: 2px solid #3182ce; padding-bottom: 8px; font-size: 22px; }
+  h2 { color: #2b6cb0; margin-top: 20px; font-size: 17px; }
+  p, li { font-size: 14px; }
+  ul { padding-left: 20px; }
+  .badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 12px; font-weight: bold; }
+  .badge-primary { background: #ebf8ff; color: #2b6cb0; border: 1px solid #bee3f8; }
+  .badge-warn { background: #fffaf0; color: #c05621; border: 1px solid #feebc8; }
+  .tip-box { background-color: #f0fff4; border-left: 4px solid #38a169; padding: 10px 14px; margin: 14px 0; border-radius: 0 4px 4px 0; }
+  .warn-box { background-color: #fff5f5; border-left: 4px solid #e53e3e; padding: 10px 14px; margin: 14px 0; border-radius: 0 4px 4px 0; }
+  code { background-color: #edf2f7; padding: 2px 5px; border-radius: 3px; font-family: monospace; font-size: 13px; }
+</style>
+</head>
+<body>
+
+<h1>Guide de l'Utilisateur - QShut</h1>
+<p><strong>QShut</strong> est une application graphique pour Linux conçue pour programmer facilement et en toute sécurité l'extinction, le redémarrage ou la mise en veille de l'ordinateur sans nécessiter les droits administrateur (root/sudo).</p>
+
+<h2>1. Modes de Programmation</h2>
+<ul>
+  <li><span class="badge badge-primary">Compte à Rebours</span> : Définissez le temps restant en minutes (de 1 à 10080 minutes). Utilisez les boutons rapides <code>+15m</code>, <code>+30m</code>, <code>+1h</code> et <code>+2h</code> pour ajuster rapidement la durée.</li>
+  <li><span class="badge badge-primary">Heure Précise</span> : Choisissez une heure et des minutes précises (format <code>HH:mm</code>). Si l'heure indiquée est déjà passée aujourd'hui, l'opération sera automatiquement programmée pour demain.</li>
+</ul>
+
+<h2>2. Actions Système</h2>
+<p>Grâce au sélecteur « Action », vous pouvez choisir :</p>
+<ul>
+  <li><strong>Éteindre l'ordinateur</strong> : Arrêt complet et sécurisé du système (par défaut).</li>
+  <li><strong>Redémarrer l'ordinateur</strong> : Redémarrage propre de la machine.</li>
+  <li><strong>Mettre en veille (Sleep)</strong> : Place l'ordinateur en mode veille économique.</li>
+</ul>
+
+<h2>3. Zone de Notification & Notifications</h2>
+<ul>
+  <li>En cochant <em>« Réduire dans la zone de notification »</em>, la fenêtre principale se masquera dès le démarrage de la minuterie.</li>
+  <li>Survolez l'icône de la barre d'état pour consulter le compte à rebours en temps réel.</li>
+  <li>Cliquez sur l'icône ou choisissez <em>« Afficher la fenêtre »</em> dans le menu pour restaurer l'interface.</li>
+</ul>
+
+<div class="warn-box">
+  <strong>Avertissement de Sécurité à 60 Secondes :</strong><br>
+  Lorsqu'il ne reste que 60 secondes avant l'action, QShut émet une notification et replace la fenêtre au premier plan, vous permettant de cliquer sur <strong>« Annuler »</strong> si nécessaire.
+</div>
+
+<h2>4. Mode Simulation (Test)</h2>
+<div class="tip-box">
+  Cocher <em>« Mode simulation (Test) »</em> vous permet de tester le compte à rebours, les notifications et l'interface sans aucun risque d'éteindre votre système.
+</div>
+
+<h2>5. Options en Ligne de Commande</h2>
+<ul>
+  <li><code>./QShut-x86_64.AppImage --test</code> : Démarre l'application avec le mode simulation préactivé.</li>
+  <li><code>./QShut-x86_64.AppImage --help</code> : Affiche l'aide et les options disponibles.</li>
+  <li><code>./QShut-x86_64.AppImage --version</code> : Affiche la version du programme.</li>
+</ul>
+
+</body>
+</html>

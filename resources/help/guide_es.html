@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; margin: 16px; color: #2d3748; }
+  h1 { color: #1a365d; border-bottom: 2px solid #3182ce; padding-bottom: 8px; font-size: 22px; }
+  h2 { color: #2b6cb0; margin-top: 20px; font-size: 17px; }
+  p, li { font-size: 14px; }
+  ul { padding-left: 20px; }
+  .badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 12px; font-weight: bold; }
+  .badge-primary { background: #ebf8ff; color: #2b6cb0; border: 1px solid #bee3f8; }
+  .badge-warn { background: #fffaf0; color: #c05621; border: 1px solid #feebc8; }
+  .tip-box { background-color: #f0fff4; border-left: 4px solid #38a169; padding: 10px 14px; margin: 14px 0; border-radius: 0 4px 4px 0; }
+  .warn-box { background-color: #fff5f5; border-left: 4px solid #e53e3e; padding: 10px 14px; margin: 14px 0; border-radius: 0 4px 4px 0; }
+  code { background-color: #edf2f7; padding: 2px 5px; border-radius: 3px; font-family: monospace; font-size: 13px; }
+</style>
+</head>
+<body>
+
+<h1>Guía del Usuario - QShut</h1>
+<p><strong>QShut</strong> es una aplicación gráfica para Linux diseñada para programar el apagado, reinicio o suspensión del equipo de forma cómoda y segura, sin requerir permisos de administrador (root/sudo).</p>
+
+<h2>1. Modos de Programación</h2>
+<ul>
+  <li><span class="badge badge-primary">Cuenta Regresiva</span>: Establece el tiempo restante en minutos (de 1 a 10080 minutos). Puedes usar los botones rápidos <code>+15m</code>, <code>+30m</code>, <code>+1h</code> y <code>+2h</code> para sumar tiempo rápidamente.</li>
+  <li><span class="badge badge-primary">Hora Específica</span>: Selecciona la hora y los minutos exactos (formato <code>HH:mm</code>). Si la hora establecida ya ha pasado hoy, la tarea se programará automáticamente para mañana.</li>
+</ul>
+
+<h2>2. Acciones del Sistema</h2>
+<p>Mediante el selector "Acción" puedes elegir:</p>
+<ul>
+  <li><strong>Apagar el equipo</strong>: Apagado seguro y completo del sistema (predeterminado).</li>
+  <li><strong>Reiniciar el equipo</strong>: Reinicio ordenado de la máquina.</li>
+  <li><strong>Suspender (Reposo)</strong>: Pone el equipo en estado de bajo consumo / suspensión.</li>
+</ul>
+
+<h2>3. Bandeja del Sistema y Notificaciones</h2>
+<ul>
+  <li>Al marcar <em>"Minimizar a la bandeja del sistema"</em>, la ventana principal se ocultará al iniciar el temporizador.</li>
+  <li>Pasa el ratón por encima del icono para consultar el tiempo restante en tiempo real.</li>
+  <li>Haz clic en el icono o selecciona <em>"Mostrar ventana"</em> en el menú para reabrir la ventana en cualquier momento.</li>
+</ul>
+
+<div class="warn-box">
+  <strong>Aviso de Seguridad a 60 Segundos:</strong><br>
+  Cuando queden exactamente 60 segundos para la acción, QShut mostrará una notificación de escritorio y colocará la ventana en primer plano para darte la opción de pulsar <strong>"Cancelar"</strong>.
+</div>
+
+<h2>4. Modo Simulación (Prueba)</h2>
+<div class="tip-box">
+  Activando <em>"Modo simulación (Prueba)"</em> puedes probar el temporizador, la barra de progreso y las alertas sin riesgo alguno de apagar el ordenador.
+</div>
+
+<h2>5. Opciones de Línea de Comandos</h2>
+<ul>
+  <li><code>./QShut-x86_64.AppImage --test</code> : Inicia la aplicación con el modo prueba preactivado.</li>
+  <li><code>./QShut-x86_64.AppImage --help</code> : Muestra los parámetros disponibles.</li>
+  <li><code>./QShut-x86_64.AppImage --version</code> : Muestra la versión del programa.</li>
+</ul>
+
+</body>
+</html>

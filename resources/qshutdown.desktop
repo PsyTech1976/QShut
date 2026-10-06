@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=QShut
+GenericName=Shutdown Timer
+Comment=Pianificatore di spegnimento e timer di sistema
+Exec=qshutdown
+Icon=qshutdown
+Terminal=false
+Categories=Utility;System;
+Keywords=shutdown;timer;poweroff;reboot;suspend;spegnimento;
+StartupNotify=true

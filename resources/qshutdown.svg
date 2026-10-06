@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#2563eb"/>
+    </linearGradient>
+    <linearGradient id="powerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ef4444"/>
+      <stop offset="100%" stop-color="#dc2626"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background circle with soft border -->
+  <rect x="8" y="8" width="112" height="112" rx="28" fill="url(#bgGrad)" stroke="#334155" stroke-width="2"/>
+
+  <!-- Clock Outer Track -->
+  <circle cx="64" cy="64" r="42" fill="none" stroke="#334155" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- Timer Arc Progress -->
+  <circle cx="64" cy="64" r="42" fill="none" stroke="url(#ringGrad)" stroke-width="6" stroke-linecap="round"
+          stroke-dasharray="264" stroke-dashoffset="70" transform="rotate(-90 64 64)"/>
+
+  <!-- Clock tick marks -->
+  <line x1="64" y1="26" x2="64" y2="30" stroke="#94a3b8" stroke-width="3" stroke-linecap="round"/>
+  <line x1="102" y1="64" x2="98" y2="64" stroke="#94a3b8" stroke-width="3" stroke-linecap="round"/>
+  <line x1="64" y1="102" x2="64" y2="98" stroke="#94a3b8" stroke-width="3" stroke-linecap="round"/>
+  <line x1="26" y1="64" x2="30" y2="64" stroke="#94a3b8" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Center Power Symbol -->
+  <path d="M 52 50 A 20 20 0 1 0 76 50" fill="none" stroke="url(#powerGrad)" stroke-width="6" stroke-linecap="round"/>
+  <line x1="64" y1="38" x2="64" y2="58" stroke="url(#powerGrad)" stroke-width="6" stroke-linecap="round"/>
+</svg>

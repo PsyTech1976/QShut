@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; margin: 16px; color: #2d3748; }
+  h1 { color: #1a365d; border-bottom: 2px solid #3182ce; padding-bottom: 8px; font-size: 22px; }
+  h2 { color: #2b6cb0; margin-top: 20px; font-size: 17px; }
+  p, li { font-size: 14px; }
+  ul { padding-left: 20px; }
+  .badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 12px; font-weight: bold; }
+  .badge-primary { background: #ebf8ff; color: #2b6cb0; border: 1px solid #bee3f8; }
+  .tip-box { background-color: #f0fff4; border-left: 4px solid #38a169; padding: 10px 14px; margin: 14px 0; border-radius: 0 4px 4px 0; }
+  .warn-box { background-color: #fff5f5; border-left: 4px solid #e53e3e; padding: 10px 14px; margin: 14px 0; border-radius: 0 4px 4px 0; }
+  code { background-color: #edf2f7; padding: 2px 5px; border-radius: 3px; font-family: monospace; font-size: 13px; }
+</style>
+</head>
+<body>
+
+<h1>User Guide - QShut</h1>
+<p><strong>QShut</strong> is a lightweight graphical application for Linux designed to easily and securely schedule system power-off, reboot, or suspend operations without requiring administrative privileges (root/sudo).</p>
+
+<h2>1. Scheduling Modes</h2>
+<ul>
+  <li><span class="badge badge-primary">Countdown</span>: Set the remaining duration in minutes (from 1 to 10080 minutes). You can use the quick shortcut buttons <code>+15m</code>, <code>+30m</code>, <code>+1h</code>, and <code>+2h</code> to rapidly increment the target timer.</li>
+  <li><span class="badge badge-primary">Specific Time</span>: Pick an exact time of day (format <code>HH:mm</code>). If the chosen time has already passed for today, the task is automatically scheduled for tomorrow.</li>
+</ul>
+
+<h2>2. System Actions</h2>
+<p>Using the "Action" selector, you can choose:</p>
+<ul>
+  <li><strong>Shut down computer</strong>: Safely powers off the computer (default).</li>
+  <li><strong>Restart computer</strong>: Reboots the system cleanly.</li>
+  <li><strong>Suspend (Sleep)</strong>: Puts the system into low-power sleep mode.</li>
+</ul>
+
+<h2>3. System Tray & Desktop Notifications</h2>
+<ul>
+  <li>Checking <em>"Minimize to system tray"</em> automatically hides the main window when you start the timer.</li>
+  <li>Hovering over the tray icon reveals the live remaining countdown.</li>
+  <li>Clicking the tray icon or selecting <em>"Show Window"</em> from its right-click menu restores the main interface.</li>
+</ul>
+
+<div class="warn-box">
+  <strong>60-Second Safety Alert:</strong><br>
+  When exactly 60 seconds remain before execution, QShut displays a desktop notification and restores the main window to the foreground, giving you a chance to click <strong>"Cancel"</strong> if you change your mind.
+</div>
+
+<h2>4. Simulation Mode (Test)</h2>
+<div class="tip-box">
+  Enabling <em>"Simulation mode (Test)"</em> allows you to verify the countdown, notifications, and progress bar without any risk of actually shutting down your system.
+</div>
+
+<h2>5. Command-Line Options</h2>
+<ul>
+  <li><code>./QShut-x86_64.AppImage --test</code> : Launches with simulation mode enabled by default.</li>
+  <li><code>./QShut-x86_64.AppImage --help</code> : Displays command-line options.</li>
+  <li><code>./QShut-x86_64.AppImage --version</code> : Prints the version.</li>
+</ul>
+
+</body>
+</html>

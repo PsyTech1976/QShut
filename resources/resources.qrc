@@ -1,0 +1,13 @@
+<!DOCTYPE RCC><RCC version="1.0">
+<qresource prefix="/icons">
+    <file alias="qshutdown.svg">qshutdown.svg</file>
+    <file alias="qshutdown.png">qshutdown.png</file>
+</qresource>
+<qresource prefix="/help">
+    <file alias="guide_it.html">help/guide_it.html</file>
+    <file alias="guide_en.html">help/guide_en.html</file>
+    <file alias="guide_fr.html">help/guide_fr.html</file>
+    <file alias="guide_de.html">help/guide_de.html</file>
+    <file alias="guide_es.html">help/guide_es.html</file>
+</qresource>
+</RCC>
