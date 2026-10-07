@@ -13,8 +13,9 @@
 
 ## 🇮🇹 INDICE (Italiano - Lingua Principale)
 1. [Panoramica](#panoramica)
-2. [Funzionalità Principali](#funzionalità-principali)
-3. [Guida all'Uso per l'Utente](#guida-alluso-per-lutente)
+2. [Screenshot dell'Interfaccia](#screenshot-dellinterfaccia)
+3. [Funzionalità Principali](#funzionalità-principali)
+4. [Guida all'Uso per l'Utente](#guida-alluso-per-lutente)
    - [Pianificazione a Conto alla Rovescia](#1-pianificazione-a-conto-alla-rovescia)
    - [Pianificazione a Orario Specifico](#2-pianificazione-a-orario-specifico)
    - [Scelta dell'Azione](#3-scelta-dellazione)
@@ -23,21 +24,22 @@
    - [Selezione della Lingua](#6-selezione-della-lingua)
    - [Guida Utente Integrata](#7-guida-utente-integrata)
    - [Modalità Simulazione (Test)](#8-modalità-simulazione-test)
-4. [Opzioni da Riga di Comando](#opzioni-da-riga-di-comando)
-5. [Come Usare il Pacchetto AppImage](#come-usare-il-pacchetto-appimage)
-6. [Compilazione da Sorgente](#compilazione-da-sorgente)
-7. [Rigenerazione dell'AppImage](#rigenerazione-dellappimage)
+5. [Opzioni da Riga di Comando](#opzioni-da-riga-di-comando)
+6. [Come Usare il Pacchetto AppImage](#come-usare-il-pacchetto-appimage)
+7. [Compilazione da Sorgente](#compilazione-da-sorgente)
+8. [Rigenerazione dell'AppImage](#rigenerazione-dellappimage)
 
 ---
 
 ## 🇬🇧 TABLE OF CONTENTS (English - In Coda)
 1. [Overview](#overview)
-2. [Key Features](#key-features)
-3. [User-Level Guide](#user-level-guide)
-4. [Command-Line Options](#command-line-options)
-5. [Using the AppImage](#using-the-appimage)
-6. [Building from Source](#building-from-source)
-7. [Rebuilding the AppImage](#rebuilding-the-appimage)
+2. [Interface Screenshots](#interface-screenshots)
+3. [Key Features](#key-features)
+4. [User-Level Guide](#user-level-guide)
+5. [Command-Line Options](#command-line-options)
+6. [Using the AppImage](#using-the-appimage)
+7. [Building from Source](#building-from-source)
+8. [Rebuilding the AppImage](#rebuilding-the-appimage)
 
 ---
 
@@ -51,6 +53,26 @@ A differenza di molti strumenti tradizionali da terminale, QShut:
 - **Non richiede password di amministratore (`sudo` o `root`)**: sfrutta l'interfaccia standard D-Bus `systemd-logind` (`org.freedesktop.login1`), autorizzata dalla sessione utente locale.
 - **Supporta 5 lingue complete**: Italiano, Inglese, Francese, Tedesco e Spagnolo.
 - **È distribuibile come AppImage standalone**: nessun bisogno di installare librerie esterne.
+
+---
+
+## Screenshot dell'Interfaccia
+
+<p align="center">
+  <img src="docs/screenshots/01_countdown_mode.png" width="48%" alt="Modalità Conto alla Rovescia" />
+  <img src="docs/screenshots/02_exact_time_mode.png" width="48%" alt="Modalità Orario Specifico" />
+</p>
+<p align="center">
+  <em>Sinistra: Modalità Conto alla Rovescia con tasti rapidi | Destra: Modalità Orario Specifico con calcolo oggi/domani</em>
+</p>
+
+<p align="center">
+  <img src="docs/screenshots/03_active_timer.png" width="48%" alt="Timer Attivo" />
+  <img src="docs/screenshots/04_help_guide.png" width="48%" alt="Guida Utente HTML" />
+</p>
+<p align="center">
+  <em>Sinistra: Conto alla rovescia attivo con barra di progresso | Destra: Guida Utente HTML integrata</em>
+</p>
 
 ---
 
@@ -196,6 +218,26 @@ Key advantages over standard command-line tools:
 - **No administrator password required (`sudo` or `root`)**: integrates directly with the standard `systemd-logind` D-Bus interface (`org.freedesktop.login1`).
 - **Full multilingual support**: English, Italian, French, German, and Spanish.
 - **Standalone AppImage package**: runs on any modern Linux distribution without extra dependencies.
+
+---
+
+## Interface Screenshots
+
+<p align="center">
+  <img src="docs/screenshots/01_countdown_mode.png" width="48%" alt="Countdown Mode" />
+  <img src="docs/screenshots/02_exact_time_mode.png" width="48%" alt="Specific Time Mode" />
+</p>
+<p align="center">
+  <em>Left: Countdown Mode with quick increment buttons | Right: Specific Time Mode with automatic day calculation</em>
+</p>
+
+<p align="center">
+  <img src="docs/screenshots/03_active_timer.png" width="48%" alt="Active Countdown" />
+  <img src="docs/screenshots/04_help_guide.png" width="48%" alt="HTML User Guide" />
+</p>
+<p align="center">
+  <em>Left: Running countdown with percentage progress bar | Right: Multilingual HTML User Guide window</em>
+</p>
 
 ---
 
