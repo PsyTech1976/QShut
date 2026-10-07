@@ -59,16 +59,16 @@ A differenza di molti strumenti tradizionali da terminale, QShut:
 ## Screenshot dell'Interfaccia
 
 <p align="center">
-  <img src="docs/screenshots/01_countdown_mode.png" width="48%" alt="Modalità Conto alla Rovescia" />
-  <img src="docs/screenshots/02_exact_time_mode.png" width="48%" alt="Modalità Orario Specifico" />
+  <img src="docs/screenshots/it/01_countdown_mode.png" width="48%" alt="Modalità Conto alla Rovescia" />
+  <img src="docs/screenshots/it/02_exact_time_mode.png" width="48%" alt="Modalità Orario Specifico" />
 </p>
 <p align="center">
   <em>Sinistra: Modalità Conto alla Rovescia con tasti rapidi | Destra: Modalità Orario Specifico con calcolo oggi/domani</em>
 </p>
 
 <p align="center">
-  <img src="docs/screenshots/03_active_timer.png" width="48%" alt="Timer Attivo" />
-  <img src="docs/screenshots/04_help_guide.png" width="48%" alt="Guida Utente HTML" />
+  <img src="docs/screenshots/it/03_active_timer.png" width="48%" alt="Timer Attivo" />
+  <img src="docs/screenshots/it/04_help_guide.png" width="48%" alt="Guida Utente HTML" />
 </p>
 <p align="center">
   <em>Sinistra: Conto alla rovescia attivo con barra di progresso | Destra: Guida Utente HTML integrata</em>
@@ -224,16 +224,16 @@ Key advantages over standard command-line tools:
 ## Interface Screenshots
 
 <p align="center">
-  <img src="docs/screenshots/01_countdown_mode.png" width="48%" alt="Countdown Mode" />
-  <img src="docs/screenshots/02_exact_time_mode.png" width="48%" alt="Specific Time Mode" />
+  <img src="docs/screenshots/en/01_countdown_mode.png" width="48%" alt="Countdown Mode" />
+  <img src="docs/screenshots/en/02_exact_time_mode.png" width="48%" alt="Specific Time Mode" />
 </p>
 <p align="center">
   <em>Left: Countdown Mode with quick increment buttons | Right: Specific Time Mode with automatic day calculation</em>
 </p>
 
 <p align="center">
-  <img src="docs/screenshots/03_active_timer.png" width="48%" alt="Active Countdown" />
-  <img src="docs/screenshots/04_help_guide.png" width="48%" alt="HTML User Guide" />
+  <img src="docs/screenshots/en/03_active_timer.png" width="48%" alt="Active Countdown" />
+  <img src="docs/screenshots/en/04_help_guide.png" width="48%" alt="HTML User Guide" />
 </p>
 <p align="center">
   <em>Left: Running countdown with percentage progress bar | Right: Multilingual HTML User Guide window</em>
